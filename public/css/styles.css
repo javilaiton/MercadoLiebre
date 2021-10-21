@@ -1,0 +1,448 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    max-width: 80vw;
+    
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+header{
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    padding: 20px;
+}
+
+header .top-header{
+    display: flex;
+    max-width: 100vw;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+header img#logo{
+    width: 50%;
+    min-height: 50px;
+    padding: 5px;
+}
+
+header .bar-search{
+    display:flex;
+    width:50%;
+    min-height: 50px;
+    padding: 5px;
+}
+
+header .bar-search #Buscar{
+    width:100%;
+}
+
+header .top-header p{
+    
+    display: block;
+    margin:auto;
+    text-align: center;
+    width: 80vw;
+}
+
+header .top-header-navbar ul.left-navbar{
+    display: none;
+    list-style: none;
+    
+}
+
+header .top-header-navbar ul.rigth-navbar{
+    display:none;
+    list-style: none;
+}
+
+header .top-header-navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+header .burger-menu{
+    display:block;
+    margin-top: 15px;
+}
+
+header .burger-menu .burger-bottom{
+    display: block;
+    margin: auto;
+    background-color: #03264C;
+    color: white;
+    max-width: 40px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-size:22px;
+}
+
+
+
+section.banner img.banner{
+    max-width: 100vw;
+    
+}
+
+main{
+    
+    text-align: center;
+    max-width: 90vw;
+    margin: auto;
+}
+
+main h2, h3{
+    color:#666;
+}
+
+main .items{
+    margin:10px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+main .items img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+
+main .description{
+    
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+    border-top:#ebebeb solid 1px;
+    position: relative;
+    border-radius: 7px;
+}
+
+
+
+main .description i{
+    display: block;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50% ;
+    position: absolute;
+    right: 20px ;
+    top: -15px ;
+}
+
+main .description i, .description p.off{
+    color: #39b54a;
+}
+
+main p strong{
+    color:#666;
+    display: none;
+}
+
+
+footer{
+    max-width: 100vw;
+    margin:20px 10px 10px;
+    background-color: white;
+    
+}
+footer .secciones{
+    text-align: center;
+    padding: 25px;
+    
+    
+}
+
+footer .secciones i{
+    color:#1259c3;
+    font-size:2em;
+    margin-bottom: 10px;
+}
+
+footer .secciones h4,.secciones p, .Copyright{
+    color: #666;
+}
+
+/*pagina de registro*/
+
+main.register, main.login{
+    border: black solid 1px;
+    margin-top: 15px;
+    padding: 10px;
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    border-radius: 10px;
+}
+
+main .form-register{
+    text-align: left;
+}
+
+main .content-buttons{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+main .content-buttons .buttons{
+    width: 30%;
+    border-radius: 5px;
+    background-color: #1259c3; 
+    color:white;
+    
+}
+
+main .control-formulario{
+    padding:5px;
+    margin: 5px;
+}
+
+main .control-formulario label{
+    display:block;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+main .control-formulario .barra{
+    border-radius: 5px;
+    width: 100%;
+}
+
+main.login .form-login .control-formulario .barra{
+    border-radius: 5px;
+    width: 50%;
+}
+
+main .control-formulario .select{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+main .control-formulario .select .union{
+    display: flex;
+    padding: 5px;
+}
+
+main .control-formulario #foto, #fecha{
+    width: 100%;
+}
+
+/*pagina de login*/
+
+
+@media (min-width:480px) {
+    header .top-header{
+        justify-content: space-between;
+    }
+
+    header img#logo{
+        width: 30%;
+    }
+
+    header .bar-search{
+        width:30%;
+    }
+
+    
+
+    header .top-header p{
+        display: flex;
+        justify-content: center;
+        max-height: 20%;
+        width: 30% ;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    header .top-header-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header .top-header-navbar ul.left-navbar{
+        display: flex;
+    }
+    
+    header .top-header-navbar ul li{
+        padding: 5px;
+    }
+
+    header .top-header-navbar ul.rigth-navbar{
+        display: flex;   
+    }
+
+    header .burger-menu{
+        display:none;   
+    }
+
+    main .products{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100vw;
+    }
+
+    main .items{
+        width: 45%;
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+
+    main .items img{
+        width: 100%
+    }
+
+    main .items .info{
+        display: flex;
+        width: 100%;
+    }
+
+    main .items .info p{
+        padding-right: 10px;
+    }
+
+    main .items .info p.off{
+        display: flex;
+        padding: 0px;
+        width: 70%;
+    }
+
+    main .description i{
+        text-align: right;
+    }
+
+    main p strong{
+        display:block;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    
+
+}
+
+@media (min-width:769px) {
+
+    section.banner img.banner{
+        max-width: 100vw;
+    }
+
+    main .products{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100vw;
+    }
+
+    main .items{
+        width: 22%;
+        box-shadow: none;
+    }
+
+    main .items:hover{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 ); 
+    }
+    
+    main .items:hover .description p strong{
+        display:block;
+    }
+
+
+    main .items img{
+        width: 100%
+    }
+
+    
+    main .description i{
+        transition: 1s all;
+    }
+
+    main .description i:hover{
+        transform: rotate(360deg);
+    }
+
+
+    main .description p strong{
+        display: none;
+    }
+
+    main.register .form-register .columns{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    main.register .form-register .columns .control-formulario{
+        width:40%;
+        padding-top: 20px;
+        
+        
+    }
+
+    main.register .form-register .columns label{
+        text-align: center;
+    }
+
+    main.register .form-register .columns .select{
+        
+        display:flex;
+        flex-wrap: wrap;
+        padding: 10px; 
+    }
+
+    main.register .form-register .contraseñas{
+        display:block;
+        text-align: center;
+        padding-bottom: 10px;
+        
+    }
+
+    main.register .form-register .contraseñas .barra{
+        width: 30%;
+    }
+
+
+
+    main.login .content-buttons .buttons:hover{
+        background-color: #0022AA;
+    }
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    footer .secciones{
+        width: 30%;
+    }
+
+    footer .secciones i:hover{
+        color: #EAC926;
+    }
+
+    footer .secciones p{
+        margin-top: 5px;
+        text-align: center;
+    }
+
+}
+
+
+
