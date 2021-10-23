@@ -87,11 +87,8 @@ header .burger-menu .burger-bottom{
     font-size:22px;
 }
 
-
-
 section.banner img.banner{
     max-width: 100vw;
-    
 }
 
 main{
@@ -103,6 +100,7 @@ main{
 
 main h2, h3{
     color:#666;
+    padding: 20px;
 }
 
 main .items{
@@ -181,7 +179,6 @@ footer .secciones h4,.secciones p, .Copyright{
 /*pagina de registro*/
 
 main.register, main.login{
-    border: black solid 1px;
     margin-top: 15px;
     padding: 10px;
     box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
@@ -193,8 +190,10 @@ main .form-register{
 }
 
 main .content-buttons{
-    text-align: center;
     margin: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
 }
 
 main .content-buttons .buttons{
@@ -216,14 +215,22 @@ main .control-formulario label{
     padding-bottom: 5px;
 }
 
+main .control-formulario div{
+    text-align: right;
+}
+
 main .control-formulario .barra{
     border-radius: 5px;
-    width: 100%;
+    width: 90%;
+    height: 30px;
+    text-align: center;
 }
 
 main.login .form-login .control-formulario .barra{
     border-radius: 5px;
     width: 50%;
+    height: 40px;
+    text-align: center;
 }
 
 main .control-formulario .select{
@@ -239,8 +246,26 @@ main .control-formulario .select .union{
 }
 
 main .control-formulario #foto, #fecha{
-    width: 100%;
+    width: 90%;
+    
 }
+
+main .contraseñas{
+    text-align: center;
+}
+
+main .contraseñas label{
+    font-size: 18px;
+}
+
+main .contraseñas .control-formulario .barra{
+    width: 50%;
+    height: 40px;
+}
+
+
+
+
 
 /*pagina de login*/
 
@@ -331,14 +356,21 @@ main .control-formulario #foto, #fecha{
         text-align: left;
     }
 
-    
+    main .content-buttons{
+        height: 45px;
+    }
+
+    main .content-buttons .buttons{
+        width: 20%;
+    }
+
 
 }
 
 @media (min-width:769px) {
 
     section.banner img.banner{
-        max-width: 100vw;
+        width: 100vw;
     }
 
     main .products{
@@ -398,6 +430,10 @@ main .control-formulario #foto, #fecha{
         text-align: center;
     }
 
+    main .control-formulario div {
+        text-align: center;
+    }
+
     main.register .form-register .columns .select{
         
         display:flex;
@@ -416,9 +452,22 @@ main .control-formulario #foto, #fecha{
         width: 30%;
     }
 
+    main .content-buttons{
+        height: 60px;
+    }
+
+    main .content-buttons .buttons{
+        width: 25%;
+        font-size: 25px;
+    }
+    
 
 
     main.login .content-buttons .buttons:hover{
+        background-color: #0022AA;
+    }
+
+    main.register .content-buttons .buttons:hover{
         background-color: #0022AA;
     }
     
