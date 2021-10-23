@@ -393,6 +393,11 @@ main .contraseñas .control-formulario .barra{
         display:block;
     }
 
+    main .items:hover .description .info{
+        display:block;
+        font-weight: bold;
+    }
+
 
     main .items img{
         width: 100%
